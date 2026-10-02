@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: campus-ledger
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: DATABASE_PATH
+        value: /var/data/students.sqlite
+    disk:
+      name: campus-ledger-data
+      mountPath: /var/data
+      sizeGB: 1

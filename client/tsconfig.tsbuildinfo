@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/config.ts","./src/main.tsx","./src/types.ts","./src/components/state.tsx","./src/components/studentdrawer.test.tsx","./src/components/studentdrawer.tsx","./src/pages/activitypage.tsx","./src/pages/insightspage.tsx","./src/pages/records.tsx","./src/test/setup.ts"],"version":"5.7.3"}

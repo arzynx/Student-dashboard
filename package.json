@@ -1,0 +1,13 @@
+{
+  "name": "student-management-system",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
+    "start": "npm run start --workspace server",
+    "test": "npm run test --workspaces",
+    "build": "npm run build --workspace client"
+  },
+  "workspaces": ["client", "server"],
+  "devDependencies": { "concurrently": "^9.1.2" }
+}
